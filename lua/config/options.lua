@@ -97,5 +97,3 @@ vim.cmd([[
         set guifont=\"JetBrainsMonoMedium Nerd Font Mono:h12\"
     endif
 ]])
-
-vim.g.lazyvim_picker = "fzf"
