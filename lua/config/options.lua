@@ -97,3 +97,11 @@ vim.cmd([[
         set guifont=\"JetBrainsMonoMedium Nerd Font Mono:h12\"
     endif
 ]])
+
+vim.diagnostic.config({
+  float = { border = "rounded" },
+})
+
+-- require("lspconfig.ui.windows").default_options = {
+--   border = "rounded",
+-- }

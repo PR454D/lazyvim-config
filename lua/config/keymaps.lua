@@ -39,6 +39,7 @@ keymap("n", "<leader>rr", ":source % <CR>", opts)
 --
 -- keymap("n", "<leader>n", ":Neotree <cr>", opts)
 keymap("n", "<leader>bk", ":bd<CR>", opts)
+keymap({ "x", "n" }, "-", require("oil").open_float, { noremap = false, silent = true, desc = "File explorer" })
 --
 -- -- Resize with arrows
 -- keymap("n", "<C-Up>", ":resize +2<CR>", opts)
@@ -112,3 +113,4 @@ keymap("n", "<leader>bk", ":bd<CR>", opts)
 -- keymap("n", "<leader>q", "<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>", opts)
 --
 -- vim.cmd([[ command! Format execute 'lua vim.lsp.buf.formatting()' ]])
+vim.keymap.set({ "n", "x" }, "<leader>rr", vim.cmd.restart, { desc = "Restart Neovim" })
